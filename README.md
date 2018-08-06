@@ -1,3 +1,8 @@
+README
+======
+
+[![IRC #go-nuts](https://www.irccloud.com/invite-svg?channel=%23go-nuts&amp;hostname=chat.freenode.net&amp;port=6697&amp;ssl=1)](https://www.irccloud.com/invite?channel=%23go-nuts&amp;hostname=chat.freenode.net&amp;port=6697&amp;ssl=1)
+
 Collatejson library, written in golang, provides encoding and decoding function
 to transform JSON text into binary representation without loosing information.
 That is,
@@ -15,18 +20,18 @@ Notes:
 
 for api documentation and bench marking try,
 
-.. code-block:: bash
-
-    godoc github.com/couchbaselabs/go-collatejson | less
-    cd go-collatejson
-    go test -test.bench=.
+```bash
+godoc github.com/couchbaselabs/go-collatejson | less
+cd go-collatejson
+go test -test.bench=.
+```
 
 to measure relative difference in sorting 100K elements using encoding/json
 library and this library try,
 
-.. code-block:: bash
-
-    go test -test.bench=Sort
+```bash
+go test -test.bench=Sort
+```
 
 examples/* contains reference sort ordering for different json elements.
 
